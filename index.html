@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="eng">
+
+    <head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" type="image/x-icon" href="ikon.ico">
+<title>Shop & Run</title>
+<link rel="stylesheet" type="text/css" href="styles.css">
+<meta 
+    </head>
+
+<body class="body">
+        <header class="kepala0">
+            <div class="kepala1">
+            <img class="logo" src="logo.png">
+            <div class="kotak2">
+            <input class="kotak1" type="text" id="searchInput" placeholder=" Belanja Langsung Kabur....">
+            <button id="konten" class="tombol1" onclick="carikonten()">Cari</button>
+            </div>
+            </div>
+        </header>
+        <div class="blank"></div>
+        <div class="pilih1">
+            <button class="kat1" id="k1">Sandal Biasa</button>
+            <button class="kat1" id="k2">Sandal Berat</button>
+            <button class="kat1" id="k3">Sandal Gunung</button>
+            <button class="kat1" id="k4">Sandal Besi</button>
+            <button class="kat1" id="k5">Sandal Karet</button>
+            <button class="kat1" id="k6">Sandal Bekas</button>
+            <button class="kat1" id="k7">Sandal Baru</button>
+            <button class="kat1" id="k8">Sandal Rumah</button>
+            <button class="kat1" id="k9">Sandal Masjid</button>
+            <button class="kat1" id="K10">Sandal Kotor</button>
+            <button class="kat1" id="k11">Sandal Gerigi</button>
+            <button class="kat1" id="k12">Sandal Lari</button>
+            <button class="kat1" id="k13">Sandal Putus</button>
+            <button class="kat1" id="k14">Sandal Kayu</button>
+        </div>
+        <div class="blank1"></div>
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+                <img src="s1.jpg" alt="Gambar 1">
+            </div>
+    
+            <div class="mySlides fade">
+                <img src="s2.jpg" alt="Gambar 2">
+            </div>
+    
+            <div class="mySlides fade">
+                <img src="s3.jpg" alt="Gambar 3">
+            </div>
+        </div>
+
+        <div class="konten" id="kon1">
+             <div class="konten1"></div>
+             <h1>Sandalmu Disini</h1>
+        </div>
+        <div class="konten" id="kon2">
+            <div class="konten1"></div>
+            <h1>Sandal Berat</h1>
+                    </div>
+
+        <footer>
+            <ul>
+                <li>Test</li>
+            </ul>
+        </footer>
+        <script>
+            const k1 = document.getElementById("k1");
+            const k2 = document.getElementById("k2");
+
+            const kon1 =document.getElementById("kon1")
+            const kon =document.getElementById("kon2")
+
+            k1.addEventListener("click", () => {
+                kon1.style.display="block";
+                kon2.style.display="none";
+            })
+
+            k2.addEventListener("click", () => {
+                kon1.style.display="none";
+                kon2.style.display="block";
+            })
+        </script>
+
+        <!-- Ini Bawah cuma gimik belaka anjayy -->
+        <script>
+            var slideIndex = 0;
+
+showSlides();
+
+function plusSlides(n) {
+    showSlides(slideIndex += n);
+}
+
+function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+
+    if (slideIndex >= slides.length) {
+        slideIndex = 0;
+    }
+
+    if (slideIndex < 0) {
+        slideIndex = slides.length - 1;
+    }
+
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+
+    slides[slideIndex].style.display = "block";
+
+    setTimeout(function () {
+        plusSlides(1);
+    }, 3000); // Ganti gambar setiap 10 detik  cuy(3000ms)
+}
+
+        </script>
+
+        <!-- Hayo ini APa -->
+        <script>
+            function cariKonten() {
+                var inputText = document.getElementById("searchInput").value; // Ambil teks dari input cuy
+                var konten = document.getElementById("konten");
+                konten.innerHTML = "<h1>" + inputText + "</h1>"; // Ubah isi div konten sesuai dengan teks dari input cuy
+            }
+            
+        </script>
+    </body>
+</html>
