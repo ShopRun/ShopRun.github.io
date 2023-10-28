@@ -1,25 +1,88 @@
 .body{
-    padding: 0px;
-    margin: 0px;
+    padding: 2px;
+    margin: 2px;
     text-align: center;
+    background-color: cyan;
 
 }
+
+
+.angkat{
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+    font-size: 20px;
+}
+
+.count{
+    width: 70px;
+      height: 50px;
+      border: 1px solid #000;
+      text-align: center;
+      font-size: 11;
+      cursor: pointer;
+      margin-top: 20px;
+      margin-right: 45px;
+      padding: 10px;
+}
+
+.marquee{
+    font-size: 14px;
+    color: white;
+    width: 200px;
+}
+.info-box {
+    width: 400px;
+    height: auto;
+    border: 1px solid #ccc;
+    padding: 5px;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    border-radius: 15px;
+    margin-right: 20px;
+  }
+
+  .profile-image {
+    width: 90px;
+    height: 90px;
+    border-radius: 90px;
+    background-image: url('profilkiki.png'); /* Ganti dengan URL gambar Anda */
+    background-size: cover;
+    background-position: center;
+    margin-right: 25px;
+  }
+
+  .info {
+    font-size: 14px;
+    margin: 0;
+  }
+
+
+
+
+
+
+
 .kepala0{
 display: flex;
 padding: 0px;
 margin: 0px;
+border-radius: 45px;
 }
 .kepala1 {
-    background-color: red;
+    background-color:navy;
     height: 120px;
     width: 100% ;
     color: white;
     border-radius: 1px;
     margin: 0px;
-    padding: 0px;
+    padding: 5px;
     top: 0;
     display: flex;
     position: fixed;
+    border-radius: 15px;
+    
 }
 
 .logo{
@@ -27,6 +90,13 @@ margin: 0px;
     height: 120px;
 }
 
+.clickbait{
+    background-color: cyan;
+    color: navy;
+    margin: 0px;
+    padding: 0px;
+
+}
 .kotak1 {
     height: 30px;
     width: 60%;
@@ -35,10 +105,16 @@ margin: 0px;
     padding: 7px;
 }
 
+.tombol1:hover {
+    background-color: #6f3ce7;
+}
 .tombol1{
-    height: 100%;
-    width: 5%;
+    height: 50px;
+    width: 50px;
     cursor: pointer;
+    position: fixed;
+    border-radius: 90px;
+    color: brown;
 
 }
 
@@ -50,7 +126,7 @@ margin: 0px;
 }
 
 .blank{
-    height: 120px;
+    height: 130px;
     padding: 0px;
     margin: 0px;
 }
@@ -59,38 +135,49 @@ margin: 0px;
     padding: 0px;
     margin: 0px;
 }
+
+
 .pilih1{
     background-color: cyan;
     padding: 1px;
     margin: 0px;
-    height: 40px;
+    height: 45px;
     width: 100%;
     display: flex;
     text-align: center;
     position: fixed;
+    overflow-y: auto;
 }
 
+.kat1:hover {
+    background-color: #dce73c;
+}
+
+
+
 .kat1 {
-    background-color: navy;
-    color: white;
+    background-color: 0, 0, 0, 0.5;
+    color: blue;
     text-align: center;
     padding: 10px;
     margin: 1px;
     width: 100%;
-    font-size: 9px;
+    font-size: 13px;
     position: relative;
     border-radius: 5px;
     transition: font-size 0.2s;
-    transition: font-size 0.2s;
     cursor: pointer;
+    border-color: blue;
 
 }
 
 .konten{
-    background-color: navy;
+    background-color: cyan;
     text-align: center;
-    height: 700px;
+    height: auto;
     width: 100%;
+    border: 2px solid green;
+    border-radius: 15px;
 }
 
 .konten1{
@@ -99,14 +186,39 @@ margin: 0px;
 
 
 
+.kotakup{
+    padding: 0px;
+    margin: 0px;
+    background-color: cyan;
 
+}
 
+.bagi{
+    display: flex;
+    width: 100%;
+    border: 3px solid green;
+    border-radius: 15px;
+    margin: 1px;
+}
 
+.kiri2{
+    width: 50%;
+    text-align: center;
+    background: cyan;
+    border-bottom-left-radius: 15px;
+    border-top-left-radius: 15px;
+    color: blue;
+    border-color: 3px solid black;
+    margin: 5px;
+}
 
 .slideshow-container {
-    max-width: 100%;
+    width: 50%;
     margin: auto;
     padding: 5px;
+    background-color: cyan;
+    border-bottom-right-radius: 15px;
+    border-top-right-radius: 15px;
 }
 
 .mySlides {
@@ -114,9 +226,9 @@ margin: 0px;
 }
 
 img {
-    width: 100%;
-    height: 450px;
-    border-radius: 45px;
+    width: 450px;
+    height: 250px;
+    border-radius: 25px;
 }
 
 .prev, .next {
@@ -134,3 +246,174 @@ img {
 .next {
     right: 0;
 }
+
+.deskripsi{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: black;
+}
+
+.loading-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Latar belakang hitam semi-transparan */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999; /* Pastikan elemen loading di atas konten lain */
+  }
+  
+  .loading-spinner {
+    border: 4px solid #f3f3f3;
+    border-top: 4px solid #3498db; /* Warna loading spinner */
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 5s linear infinite;
+    margin: 0 auto;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  
+  .content-container {
+    display: none; /* Konten awalnya disembunyikan */
+  }
+
+
+
+
+
+.produk1{
+    display: flex;
+}
+
+  .outer-box {
+    width: 300px;
+    height: 450px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border-radius: 15 px;
+  }
+
+  .img{
+    width: 200px;
+    height: 200px;
+    border-radius: 14px;
+  }
+  .image-box {
+    width: 200px;
+    height: 200px;
+    border: 1px solid #000;
+    background-image: url('gambar-anda.jpg'); /* Ganti dengan URL gambar Anda */
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 10px;
+    border-radius: 15px;
+  }
+
+  .button-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .button {
+    width: 75px;
+    padding: 10px;
+    margin: 5px;
+    background-color: #3498db; /* Warna latar belakang tombol */
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 15px;
+  }
+
+  .title {
+    font-size: 18px;
+    margin-top: 10px;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+  .blank3{
+height: 1px;
+  }
+
+  .blank4{
+    height: 5px;
+      }
+
+
+  .bawahan{
+    border-radius: 15px;
+    border: 2px solid green;
+    padding: 0px;
+    background-color: navy;
+  }
+
+  .bawahan1{
+    display: flex;
+    height: 300px;
+
+
+  }
+
+  .kotakfot1{
+    width: 100%;
+    border: 1px solid white;
+    border-top-left-radius: 15px;
+    color: white;
+  }
+
+  .kotakfot2{
+    width: 100%;
+    border: 1px solid white;
+    color: white;
+    
+  }
+
+  .kotakfot3{
+    width: 100%;
+    border: 1px solid white;
+    border-top-right-radius: 15px;
+    color: white;
+  }
+
+  .fotdes{
+    font-size: 25px;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+  }
+
+  .tanda1{
+    font-size: 17px;
+    color: white;
+  }
+  .pengiriman-list {
+    list-style-type: none; 
+    padding: 0;
+    font-size: 13px;
+  }
+
+  .pengiriman-list-item {
+    margin-bottom: 5px;
+  }

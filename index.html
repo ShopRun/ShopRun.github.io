@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="eng">
+<html lang="id">
 
     <head>
 <meta charset="UTF-8">
@@ -11,33 +11,57 @@
     </head>
 
 <body class="body">
+
+    <div id="loading" class="loading-container">
+        <div class="loading-spinner"></div>
+      </div>
+      <div id="content" class="content-container">
+
         <header class="kepala0">
             <div class="kepala1">
             <img class="logo" src="logo.png">
             <div class="kotak2">
             <input class="kotak1" type="text" id="searchInput" placeholder=" Belanja Langsung Kabur....">
-            <button id="konten" class="tombol1" onclick="carikonten()">Cari</button>
+            <button id="konten" class="tombol1" onclick="ubahWarna()">Cari</button>
+            </div>
+            <div class="count">
+                <span class="angkat" id="angka">0</span>
+                <p>Keranjang</p>
+            </div>
+            <div class="info-box">
+                <div class="profile-image"></div>
+                     <div>
+                       <p class="info">Nama : Riski Septianto</p>
+                       <p class="info">NIM  : 312310676</p>
+                       <p class="info">Kelas: TI.23.C.9</p>
+                       <marquee class="marquee" behavior="scroll" direction="left"><strong>Jangan hanya beli waktu ada uang, Pakailah uang teman selagi ada!!  | Whoosh perubahan datang seketika kata teman saya.</strong>
+                        
+                      </marquee>
+            </div>
+
+
             </div>
             </div>
         </header>
+
         <div class="blank"></div>
         <div class="pilih1">
-            <button class="kat1" id="k1">Sandal Biasa</button>
-            <button class="kat1" id="k2">Sandal Berat</button>
-            <button class="kat1" id="k3">Sandal Gunung</button>
-            <button class="kat1" id="k4">Sandal Besi</button>
-            <button class="kat1" id="k5">Sandal Karet</button>
-            <button class="kat1" id="k6">Sandal Bekas</button>
-            <button class="kat1" id="k7">Sandal Baru</button>
-            <button class="kat1" id="k8">Sandal Rumah</button>
-            <button class="kat1" id="k9">Sandal Masjid</button>
-            <button class="kat1" id="K10">Sandal Kotor</button>
-            <button class="kat1" id="k11">Sandal Gerigi</button>
-            <button class="kat1" id="k12">Sandal Lari</button>
-            <button class="kat1" id="k13">Sandal Putus</button>
-            <button class="kat1" id="k14">Sandal Kayu</button>
+            <button onclick="ubahWarna()" class="kat1" id="k1">Sandal Antik</button>
+            <button onclick="ubahWarna()" class="kat1" id="k2">Sandal Karet</button>
+            <button onclick="ubahWarna()" class="kat1" id="k3">Sandal Gunung</button>
+            <button onclick="ubahWarna()" class="kat1" id="k4">Sandal Besi</button>
+            <button onclick="ubahWarna()" class="kat1" id="k5">Sandal Kayu</button>
+            <button onclick="ubahWarna()" class="kat1" id="k6">Sandal Bekas</button>
+            <button onclick="ubahWarna()" class="kat1" id="k7">Sandal Biasa</button>
+            <button onclick="ubahWarna()" class="kat1" id="k8">Sandal Premium</button>
         </div>
         <div class="blank1"></div>
+        <div class="bagi">
+            <div class="kiri2">
+                <h1 class="deskirpsi">Sandal Kulitas Premium</h1>
+                <p1 class="deskripsi2">Sandal dengan kulitas premium </br> Belum mau beli ?, Masukan keranjang dulu ? </br> 
+                Belum Gajian Pakai Duit teman!</p1>
+            </div>
         <div class="slideshow-container">
             <div class="mySlides fade">
                 <img src="s1.jpg" alt="Gambar 1">
@@ -50,22 +74,176 @@
             <div class="mySlides fade">
                 <img src="s3.jpg" alt="Gambar 3">
             </div>
+            </div>
+        </div>
         </div>
 
         <div class="konten" id="kon1">
              <div class="konten1"></div>
-             <h1>Sandalmu Disini</h1>
+
+             <div class="produk1">
+
+                <div class="outer-box">
+                <div class="image-box"> 
+                    <img class="img" src="antik1.jpg" alt="Gambar Produk">
+                </div>
+                <h2 class="title">Sandal kuno 1</h2>
+                <div class="button-container">
+                <button onclick="tampilkanPeringatan()" class="button">Beli</button>
+                <button id="tombol" class="button">Keranjang</button>
+                </div>
+                </div>
+
+                <div class="outer-box">
+                <div class="image-box">
+                    <img class="img" src="antik 2.jpg" alt="Gambar Produk">
+                </div>
+                <h2 class="title">Sandal kuno 2</h2>
+                <div class="button-container">
+                <button onclick="tampilkanPeringatan()" class="button">Beli</button>
+                <button id="tombol" class="button">Keranjang</button>
+                </div> 
+                </div>
+
+                <div class="outer-box">
+                <div class="image-box">
+                    <img class="img" src="antik 3.jpg" alt="Gambar Produk">
+                </div>
+                <h2 class="title">Sandal kuno 3</h2>
+                <div class="button-container">
+                <button onclick="tampilkanPeringatan()" class="button">Beli</button>
+                <button id="tombol" class="button">Keranjang</button>
+                </div> 
+                </div>
+
+                <div class="outer-box">
+                <div class="image-box">
+                    <img class="img" src="antik 4.jpg" alt="Gambar Produk">
+                </div>
+                <h2 class="title">Sandal kuno 4</h2>
+                <div class="button-container">
+                <button onclick="tampilkanPeringatan()" class="button">Beli</button>
+                <button id="tombol" class="button">Keranjang</button>
+                </div> 
+                </div>
+
+                <div class="outer-box">
+                <div class="image-box">
+                    <img class="img" src="antik5.jpg" alt="Gambar Produk">
+                </div>
+                <h2 class="title">Sandal kuno 5</h2>
+                <div class="button-container">
+                <button onclick="tampilkanPeringatan()" class="button">Beli</button>
+                <button id="tombol" class="button">Keranjang</button>
+                </div> 
+                </div>
         </div>
+        </div>
+
+
         <div class="konten" id="kon2">
             <div class="konten1"></div>
-            <h1>Sandal Berat</h1>
-                    </div>
+            <div class="produk1">
 
-        <footer>
-            <ul>
-                <li>Test</li>
-            </ul>
+                <div class="outer-box">
+                <div class="image-box"> 
+                    <img class="img" src="sw1.jpg" alt="Gambar Produk">
+                </div>
+                <h2 class="title">Swallow 1</h2>
+                <div class="button-container">
+                <button onclick="tampilkanPeringatan()" class="button">Beli</button>
+                <button id="tombol" class="button">Keranjang</button>
+                </div>
+                </div>
+
+                <div class="outer-box">
+                <div class="image-box">
+                    <img class="img" src="sw2.jpg" alt="Gambar Produk">
+                </div>
+                <h2 class="title">Swallow 2</h2>
+                <div class="button-container">
+                <button onclick="tampilkanPeringatan()" class="button">Beli</button>
+                <button id="tombol" class="button">Keranjang</button>
+                </div> 
+                </div>
+
+                <div class="outer-box">
+                <div class="image-box">
+                    <img class="img" src="sw3.jpg" alt="Gambar Produk">
+                </div>
+                <h2 class="title">Swallow 3</h2>
+                <div class="button-container">
+                <button onclick="tampilkanPeringatan()" class="button">Beli</button>
+                <button id="tombol" class="button">Keranjang</button>
+                </div> 
+                </div>
+
+                <div class="outer-box">
+                <div class="image-box">
+                    <img class="img" src="sw4.jpg" alt="Gambar Produk">
+                </div>
+                <h2 class="title">Swallow 4</h2>
+                <div class="button-container">
+                <button onclick="tampilkanPeringatan()" class="button">Beli</button>
+                <button  id="tombol" class="button">Keranjang</button>
+                </div> 
+                </div>
+
+                <div class="outer-box">
+                <div class="image-box">
+                    <img class="img" src="swallow.jpg" alt="Gambar Produk">
+                </div>
+                <h2 class="title">Swallow 5</h2>
+                <div class="button-container">
+                <button onclick="tampilkanPeringatan()" class="button">Beli</button>
+                <button id="tombol" class="button">Keranjang</button>
+                </div> 
+                </div>
+        </div>
+        </div>
+
+<div class="blank3"></div>
+
+        <footer class="bawahan">
+            <div class="bawahan1">
+                <div class="kotakfot1">
+                    <h1 class="fotdes"> Pengiriman </h1>
+                        <h3>Kami Tidak Bekerjasama dengan</h3>
+                        <ul class="pengiriman-list">
+                          <li class="pengiriman-list-item">JNE (Jalur Nugraha Ekakurir)</li>
+                          <li class="pengiriman-list-item">POS Indonesia</li>
+                          <li class="pengiriman-list-item">Tiki (Titipan Kilat)</li>
+                          <li class="pengiriman-list-item">SiCepat (Sistem Cepat) Express</li>
+                          <li class="pengiriman-list-item">Ninja Xpress</li>
+                          <h3>Saran Saya</h3>
+                          <li class="pengiriman-list-item"> Ambil Sendiri </li>
+                          <li class="pengiriman-list-item"> COD (Jangan Bawa Orang Sekampung) </li>
+                </div>
+
+                <div class="kotakfot2">
+                    <h1 class="fotdes"> Pengembalian </h1>
+                    <p class="desfot1">Pastikan sebelum dibuka Paket Harap dilakukan </br> <strong>Video Unboxing</strong> </br>
+                    Jika tidak sesuai Ekspetasi anda yang sangat tinggi.</p>
+                </div>
+                <div class="kotakfot3"> 
+                    <h1 class="fotdes"> Tentang Kami</h1>
+                    <p1 class="desfot1"> <strong>Shop Run</strong> merupakan website jualan yang didesign mendadak dikarenakan tugas mata kuliah Pengantar Teknologi </br>
+                    Website ini dirancang oleh saya sendiri tentunya dengan bantuan bahasa pemrogaman yang tergolong standar</p1>
+                    <div class="medsos">
+
+                        <p class="desfot1"> </p>Ini instagram Saya <a href="https://www.instagram.com/rspto___/">Instagram</a>.</p>
+                        <p class="desfot1">Ini Source Github Saya <a href="https://github.com/ShopRun">Github</a>.</p>
+
+
+                    </div>
+                </div>
+            </div>
+            <div class="blank4"></div>
+            <div class="tanda1"><strong> &copy; Riski Septianto | Kebumen - Jawa Tengah </strong></div>
+            <div class="blank4"></div>
         </footer>
+
+
         <script>
             const k1 = document.getElementById("k1");
             const k2 = document.getElementById("k2");
@@ -128,5 +306,48 @@ function showSlides() {
             }
             
         </script>
+
+        <!--Ubah Warna tombol lur-->
+        <script>function ubahWarna() {
+            // Fungsi yang akan dijalankan saat tombol diklik
+            document.querySelector(".tombol").style.backgroundColor = "#2ecc71"; /* Warna setelah diklik */
+          }</script>
+
+<!--Ini kode loading page-->
+          <script>
+            window.addEventListener('load', function() {
+  // Semua konten sudah dimuat
+  var loading = document.getElementById('loading');
+  var content = document.getElementById('content');
+
+  loading.style.display = 'none'; // Sembunyikan elemen loading
+  content.style.display = 'block'; // Tampilkan konten
+});
+
+          </script>
+
+          <!--klik anjay-->
+          <script>
+var tombol = document.getElementById('tombol');
+    var angkaSpan = document.getElementById('angka');
+
+    // Inisialisasi angka
+    var angka = 0;
+
+    // Menambah 1 angka ketika tombol ditekan
+    tombol.addEventListener('click', function() {
+      angka++;
+      angkaSpan.innerText = angka;
+    });
+
+          </script>
+
+
+<!--PopUp ges-->
+          <script>
+            function tampilkanPeringatan() {
+      alert("Produk Habis!!");
+    }
+          </script>
     </body>
 </html>
